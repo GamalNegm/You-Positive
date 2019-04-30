@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BLoodShare</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="drawer_open">Opened</string>
+    <string name="drawer_close">Closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">BloodShare</string>
+    <string name="title_activity_details">Request Details</string>
+    <string name="title_activity_chat">ChatRoom</string>
+</resources>

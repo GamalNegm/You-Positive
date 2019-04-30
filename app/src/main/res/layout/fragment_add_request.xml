@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".Fragments.AddRequest">
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/iron">
+        <include layout="@layout/toolbar"
+            android:id="@+id/toolbar"/>
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blood_Type"
+        android:hint="blood Type"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@+id/toolbar"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Location"
+        android:layout_below="@+id/blood_Type"
+        android:hint="Location"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Num"
+        android:hint="Num"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@+id/Location"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Reason"
+        android:hint="Reason"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@+id/Num"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/details"
+        android:hint="details"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_below="@+id/Reason"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:id="@+id/add"
+        android:layout_below="@+id/details"/>
+    </RelativeLayout>
+</RelativeLayout>

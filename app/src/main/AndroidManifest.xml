@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prog.bloodshare">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--//<uses-permission android:name="android.permission."-->
+    <application
+        android:allowBackup="true"
+        android:name=".utils.APP"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Activities.NewRequestActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+
+            android:name=".Activities.LoginActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Activities.SignupActivity"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Activities.RequestDetails"
+            android:label="@string/title_activity_details"
+            android:theme="@style/AppTheme.Dark" />
+        <activity
+            android:name=".Activities.ChatActivity"
+            android:label="@string/title_activity_chat"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.MyChatRooms" />
+
+        <service android:name=".fcm.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notify.MyFCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- ###  Register service get token and send it to service  ### -->
+        <service android:name=".notify.FCMRegistrationService" />
+
+        <!-- ###  Service response to token refresh event  ### -->
+        <service
+            android:name=".notify.FCMTokenRefreshListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--###  listener service listen to firebase messages ###-->
+
+
+    </application>
+
+</manifest>

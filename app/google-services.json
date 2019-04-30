@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "995050104925",
+    "firebase_url": "https://bloodshare-43c1f.firebaseio.com",
+    "project_id": "bloodshare-43c1f",
+    "storage_bucket": "bloodshare-43c1f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995050104925:android:3958548b189fda9f",
+        "android_client_info": {
+          "package_name": "com.example.prog.bloodshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995050104925-epfghuh9v0j3jn8cjcm7ssqq180fa09v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxVSEq1CCslgkCt3HEAawf5yfW3es1TsY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
